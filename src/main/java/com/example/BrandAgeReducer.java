@@ -5,23 +5,16 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
-public class BrandAgeReducer extends Reducer<Text, IntWritable, Text, Text> {
+public class BrandAgeReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
+    private IntWritable result = new IntWritable();
+
     public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
-        int count = 0;
-        Map<Integer, Integer> ageDistribution = new HashMap<>();
-
+        int sum = 0;
         for (IntWritable val : values) {
-            count++;
-            int age = val.get();
-            ageDistribution.put(age, ageDistribution.getOrDefault(age, 0) + 1);
+            sum += val.get();
         }
-
-        StringBuilder result = new StringBuilder();
-        result.append("Total: ").append(count).append(", Age Distribution: ").append(ageDistribution.toString());
-
-        context.write(key, new Text(result.toString()));
+        result.set(sum);
+        context.write(key, result);
     }
 }
