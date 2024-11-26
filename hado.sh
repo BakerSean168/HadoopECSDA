@@ -7,4 +7,4 @@ mvn clean package
 hdfs dfs -rm -r /user/root/output
 
 # 运行 Hadoop 作业
-hadoop jar target/hademo-1.0-SNAPSHOT.jar com.example.BrandAgeAnalysis input/ output/
+hadoop jar target/hademo-1.0-SNAPSHOT.jar com.example.SalesAnalysis input/ output/
