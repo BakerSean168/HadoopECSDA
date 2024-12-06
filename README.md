@@ -1,3 +1,7 @@
+# E-commerce sales data analysis
+
+基于mapreduce的电商销售数据分析
+
 # 预期目标
 
 预期获取各类手机品牌的销售占比以及消费人群的年龄分布，  
