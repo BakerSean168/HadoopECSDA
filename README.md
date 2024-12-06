@@ -44,3 +44,4 @@ startHadoop.sh 为一键启动 Hadoop 集群服务脚本
 3. 进入 hadoop 文件夹执行 hado.sh，一键编译运行 mapreduce 程序
 4. 运行 `hadoop fs -copyToLocal /user/[用户名]/output/ ../output/` 将分布式文件系统中的运行结果复制到本地 output 文件夹中
 5. 进入 visualization 文件夹运行 `pip install -r requirements.txt` 安装依赖，然后运行 python 文件，生成可视化看板
+6. 调整好图表位置后 注释掉`page.render("test.html")` 使用固定图表代码重新运行，生成最终图。

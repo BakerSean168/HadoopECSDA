@@ -135,7 +135,14 @@ time_line = (
 # 创建看板
 page = Page(layout=Page.DraggablePageLayout)
 page.add(age_bar, brand_bar, date_bar, local_geo, time_line)
+
+# 第一次生成拖拽图
 page.render('dashboard.html')
+
+# 生成最终图
+#page.save_resize_html("dashboard.html",
+#                       cfg_file="chart_config.json",
+#                       dest="ECSDA.html")
 
 # 添加标题到看板
 with open('dashboard.html', 'r') as file:
