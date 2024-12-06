@@ -5,6 +5,7 @@
 统计不同地区的销售额占比,
 并进行可视化成果展示。
 
+项目结构
 big-data-project/
 ├── data/
 │   └── example.csv
@@ -17,8 +18,8 @@ big-data-project/
 │   │   │               ├── SalesMapper.java
 │   │   │               ├── SalesReducer.java
 │   │   │               └── SalesAnalysis.java
-│   ├── build.sh
-│   └── run.sh
+│   ├── hado.sh
+│   └── pom.xml
 ├── visualization/
 │   ├── visualize.py
 │   └── requirements.txt
