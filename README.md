@@ -12,25 +12,25 @@
 
 # 项目主要结构
 
-big-data-project/
-├── data/
-│   └── ECS.csv
-├── hadoop/
-│   ├── src/
-│   │   ├── main/
-│   │   │   └── java/
-│   │   │       └── com/
-│   │   │           └── example/
-│   │   │               ├── SalesMapper.java
-│   │   │               ├── SalesReducer.java
-│   │   │               └── SalesAnalysis.java
-│   ├── hado.sh
-│   └── pom.xml
-├── visualization/
-│   ├── visualize.py
-│   └── requirements.txt
-├── startHadoopService.sh
-└── README.md
+big-data-project/  
+├── data/  
+│   └── ECS.csv  
+├── hadoop/  
+│   ├── src/  
+│   │   ├── main/  
+│   │   │   └── java/  
+│   │   │       └── com/  
+│   │   │           └── example/  
+│   │   │               ├── SalesMapper.java  
+│   │   │               ├── SalesReducer.java  
+│   │   │               └── SalesAnalysis.java  
+│   ├── hado.sh  
+│   └── pom.xml  
+├── visualization/  
+│   ├── visualize.py  
+│   └── requirements.txt  
+├── startHadoopService.sh  
+└── README.md  
 
 ## 文件说明
 
