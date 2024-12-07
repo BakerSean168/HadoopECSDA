@@ -45,3 +45,7 @@ startHadoop.sh 为一键启动 Hadoop 集群服务脚本
 4. 运行 `hadoop fs -copyToLocal /user/[用户名]/output/ ../output/` 将分布式文件系统中的运行结果复制到本地 output 文件夹中
 5. 进入 visualization 文件夹运行 `pip install -r requirements.txt` 安装依赖，然后运行 python 文件，生成可视化看板
 6. 调整好图表位置后 注释掉`page.render("test.html")` 使用固定图表代码重新运行，生成最终图。
+
+# 结果图
+
+![result](https://github.com/user-attachments/assets/4cf45897-35fc-495e-ae5f-8ffaa98c05ec)
