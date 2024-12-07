@@ -1,1 +1,7 @@
-[{"cid":"fdfe64ad00e34437aac6de3fc8b36436","width":"461.4px","height":"329.4px","top":"33.20000076293945px","left":"8px"},{"cid":"ad0e448eae0e45ea932a68589174e95c","width":"461.4px","height":"329.4px","top":"365.6000061035156px","left":"8px"},{"cid":"1b755081541a44bf94c06b387378e6fc","width":"463.4px","height":"332.4px","top":"365px","left":"938px"},{"cid":"4aa386a832634b6998416cfbad24a911","width":"464.4px","height":"404.4px","top":"161.40000915527344px","left":"473px"},{"cid":"da81eba76fd641539986ebad9e2c9e71","width":"460.4px","height":"315.4px","top":"48.79999923706055px","left":"940px"}]
+[
+    {"cid":"age_bar","width":"461.4px","height":"329.4px","top":"33.20000076293945px","left":"8px"},
+    {"cid":"brand_bar","width":"461.4px","height":"329.4px","top":"365.6000061035156px","left":"8px"},
+    {"cid":"date_bar","width":"463.4px","height":"332.4px","top":"365px","left":"938px"},
+    {"cid":"local_geo","width":"464.4px","height":"404.4px","top":"161.40000915527344px","left":"473px"},
+    {"cid":"time_line","width":"460.4px","height":"315.4px","top":"48.79999923706055px","left":"940px"}
+]

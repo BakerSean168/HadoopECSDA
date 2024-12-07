@@ -65,7 +65,7 @@ time_sales['sales'] = time_sales['sales'].astype(float)
 # 创建图表
 # 年龄分布柱状图
 age_bar = (
-    Bar(init_opts=opts.InitOpts(theme=ThemeType.DARK))
+    Bar(init_opts=opts.InitOpts(theme=ThemeType.DARK, chart_id="age_bar"))
     .add_xaxis(age_distribution['age'].tolist())
     .add_yaxis("Count", age_distribution['count'].tolist())
     .set_global_opts(
@@ -78,7 +78,7 @@ age_bar = (
 
 # 品牌销售额柱状图
 brand_bar = (
-    Bar(init_opts=opts.InitOpts(theme=ThemeType.DARK))
+    Bar(init_opts=opts.InitOpts(theme=ThemeType.DARK, chart_id="brand_bar"))
     .add_xaxis(brand_sales['brand'].tolist())
     .add_yaxis("Sales", brand_sales['sales'].tolist())
     .set_global_opts(
@@ -91,7 +91,7 @@ brand_bar = (
 
 # 不同日期类型的销售额柱状图
 date_bar = (
-    Bar(init_opts=opts.InitOpts(theme=ThemeType.DARK))
+    Bar(init_opts=opts.InitOpts(theme=ThemeType.DARK, chart_id="date_bar"))
     .add_xaxis(date_sales['day_type'].tolist())
     .add_yaxis("Sales", date_sales['sales'].tolist())
     .set_global_opts(
@@ -104,7 +104,7 @@ date_bar = (
 
 # 各地区消费额地图
 local_geo = (
-    Geo(init_opts=opts.InitOpts(theme=ThemeType.DARK))
+    Geo(init_opts=opts.InitOpts(theme=ThemeType.DARK, chart_id="local_geo"))
     .add_schema(maptype="china")
     .add(
         "Sales",
@@ -121,7 +121,7 @@ local_geo = (
 
 # 不同时间段的销售额折线图
 time_line = (
-    Line(init_opts=opts.InitOpts(theme=ThemeType.DARK))
+    Line(init_opts=opts.InitOpts(theme=ThemeType.DARK, chart_id="time_line"))
     .add_xaxis(time_sales['hour'].tolist())
     .add_yaxis("Sales", time_sales['sales'].tolist())
     .set_global_opts(
@@ -134,21 +134,25 @@ time_line = (
 
 # 创建看板
 page = Page(layout=Page.DraggablePageLayout)
+
+page.page_title = '手机销售数据分析看板'
 page.add(age_bar, brand_bar, date_bar, local_geo, time_line)
+
 
 # 第一次生成拖拽图
 page.render('dashboard.html')
 
 # 生成最终图
-#page.save_resize_html("dashboard.html",
-#                       cfg_file="chart_config.json",
-#                       dest="ECSDA.html")
+page.save_resize_html("dashboard.html",
+                       cfg_file="chart_config.json",
+                       dest="ECSDA.html")
 
-# 添加标题到看板
-with open('dashboard.html', 'r') as file:
+# 添加标题和背景颜色到看板
+with open('ECSDA.html', 'r') as file:
     content = file.read()
 
-content = content.replace('<body>', '<body><h1 style="text-align:center;">手机销售数据分析看板</h1>')
 
-with open('dashboard.html', 'w') as file:
+content = content.replace('<style>.box {  } </style>', '<style>.box { background-color: #100C2A; width: 100%; height: 720px; } </style>')
+
+with open('ECSDA.html', 'w') as file:
     file.write(content)

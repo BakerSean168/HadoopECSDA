@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Awesome-pyecharts</title>
+    <title>手机销售数据分析看板</title>
                 <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/jquery.min.js"></script>
@@ -13,14 +13,14 @@
 
 </head>
 <body >
-    <style>.box {  } </style>
+    <style>.box { background-color: #100C2A; width: 100%; height: 720px; } </style>
         
     <div class="box">
-                <div id="fdfe64ad00e34437aac6de3fc8b36436" class="chart-container" style="position: absolute; width: 461.4px; height: 329.4px; top: 33.20000076293945px; left: 8px;"></div>
+                <div id="age_bar" class="chart-container" style="position: absolute; width: 461.4px; height: 329.4px; top: 33.20000076293945px; left: 8px;"></div>
     <script>
-        var chart_fdfe64ad00e34437aac6de3fc8b36436 = echarts.init(
-            document.getElementById('fdfe64ad00e34437aac6de3fc8b36436'), 'dark', {renderer: 'canvas'});
-        var option_fdfe64ad00e34437aac6de3fc8b36436 = {
+        var chart_age_bar = echarts.init(
+            document.getElementById('age_bar'), 'dark', {renderer: 'canvas'});
+        var option_age_bar = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -275,13 +275,13 @@
         }
     ]
 };
-        chart_fdfe64ad00e34437aac6de3fc8b36436.setOption(option_fdfe64ad00e34437aac6de3fc8b36436);
+        chart_age_bar.setOption(option_age_bar);
     </script>
-<br/>                <div id="ad0e448eae0e45ea932a68589174e95c" class="chart-container" style="position: absolute; width: 461.4px; height: 329.4px; top: 365.6000061035156px; left: 8px;"></div>
+<br/>                <div id="brand_bar" class="chart-container" style="position: absolute; width: 461.4px; height: 329.4px; top: 365.6000061035156px; left: 8px;"></div>
     <script>
-        var chart_ad0e448eae0e45ea932a68589174e95c = echarts.init(
-            document.getElementById('ad0e448eae0e45ea932a68589174e95c'), 'dark', {renderer: 'canvas'});
-        var option_ad0e448eae0e45ea932a68589174e95c = {
+        var chart_brand_bar = echarts.init(
+            document.getElementById('brand_bar'), 'dark', {renderer: 'canvas'});
+        var option_brand_bar = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -506,13 +506,13 @@
         }
     ]
 };
-        chart_ad0e448eae0e45ea932a68589174e95c.setOption(option_ad0e448eae0e45ea932a68589174e95c);
+        chart_brand_bar.setOption(option_brand_bar);
     </script>
-<br/>                <div id="1b755081541a44bf94c06b387378e6fc" class="chart-container" style="position: absolute; width: 463.4px; height: 332.4px; top: 365px; left: 938px;"></div>
+<br/>                <div id="date_bar" class="chart-container" style="position: absolute; width: 463.4px; height: 332.4px; top: 365px; left: 938px;"></div>
     <script>
-        var chart_1b755081541a44bf94c06b387378e6fc = echarts.init(
-            document.getElementById('1b755081541a44bf94c06b387378e6fc'), 'dark', {renderer: 'canvas'});
-        var option_1b755081541a44bf94c06b387378e6fc = {
+        var chart_date_bar = echarts.init(
+            document.getElementById('date_bar'), 'dark', {renderer: 'canvas'});
+        var option_date_bar = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -701,13 +701,13 @@
         }
     ]
 };
-        chart_1b755081541a44bf94c06b387378e6fc.setOption(option_1b755081541a44bf94c06b387378e6fc);
+        chart_date_bar.setOption(option_date_bar);
     </script>
-<br/>                <div id="4aa386a832634b6998416cfbad24a911" class="chart-container" style="position: absolute; width: 464.4px; height: 404.4px; top: 161.40000915527344px; left: 473px;"></div>
+<br/>                <div id="local_geo" class="chart-container" style="position: absolute; width: 464.4px; height: 404.4px; top: 161.40000915527344px; left: 473px;"></div>
     <script>
-        var chart_4aa386a832634b6998416cfbad24a911 = echarts.init(
-            document.getElementById('4aa386a832634b6998416cfbad24a911'), 'dark', {renderer: 'canvas'});
-        var option_4aa386a832634b6998416cfbad24a911 = {
+        var chart_local_geo = echarts.init(
+            document.getElementById('local_geo'), 'dark', {renderer: 'canvas'});
+        var option_local_geo = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -930,13 +930,13 @@
         "emphasis": {}
     }
 };
-        chart_4aa386a832634b6998416cfbad24a911.setOption(option_4aa386a832634b6998416cfbad24a911);
+        chart_local_geo.setOption(option_local_geo);
     </script>
-<br/>                <div id="da81eba76fd641539986ebad9e2c9e71" class="chart-container" style="position: absolute; width: 460.4px; height: 315.4px; top: 48.79999923706055px; left: 940px;"></div>
+<br/>                <div id="time_line" class="chart-container" style="position: absolute; width: 460.4px; height: 315.4px; top: 48.79999923706055px; left: 940px;"></div>
     <script>
-        var chart_da81eba76fd641539986ebad9e2c9e71 = echarts.init(
-            document.getElementById('da81eba76fd641539986ebad9e2c9e71'), 'dark', {renderer: 'canvas'});
-        var option_da81eba76fd641539986ebad9e2c9e71 = {
+        var chart_time_line = echarts.init(
+            document.getElementById('time_line'), 'dark', {renderer: 'canvas'});
+        var option_time_line = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -1249,21 +1249,21 @@
         }
     ]
 };
-        chart_da81eba76fd641539986ebad9e2c9e71.setOption(option_da81eba76fd641539986ebad9e2c9e71);
+        chart_time_line.setOption(option_time_line);
     </script>
 <br/>    </div>
     <script>
-            $('#fdfe64ad00e34437aac6de3fc8b36436').css('border-style', 'dashed').css('border-width', '0px');$("#fdfe64ad00e34437aac6de3fc8b36436>div:nth-child(1)").width("100%").height("100%");
-            new ResizeSensor(jQuery('#fdfe64ad00e34437aac6de3fc8b36436'), function() { chart_fdfe64ad00e34437aac6de3fc8b36436.resize()});
-            $('#ad0e448eae0e45ea932a68589174e95c').css('border-style', 'dashed').css('border-width', '0px');$("#ad0e448eae0e45ea932a68589174e95c>div:nth-child(1)").width("100%").height("100%");
-            new ResizeSensor(jQuery('#ad0e448eae0e45ea932a68589174e95c'), function() { chart_ad0e448eae0e45ea932a68589174e95c.resize()});
-            $('#1b755081541a44bf94c06b387378e6fc').css('border-style', 'dashed').css('border-width', '0px');$("#1b755081541a44bf94c06b387378e6fc>div:nth-child(1)").width("100%").height("100%");
-            new ResizeSensor(jQuery('#1b755081541a44bf94c06b387378e6fc'), function() { chart_1b755081541a44bf94c06b387378e6fc.resize()});
-            $('#4aa386a832634b6998416cfbad24a911').css('border-style', 'dashed').css('border-width', '0px');$("#4aa386a832634b6998416cfbad24a911>div:nth-child(1)").width("100%").height("100%");
-            new ResizeSensor(jQuery('#4aa386a832634b6998416cfbad24a911'), function() { chart_4aa386a832634b6998416cfbad24a911.resize()});
-            $('#da81eba76fd641539986ebad9e2c9e71').css('border-style', 'dashed').css('border-width', '0px');$("#da81eba76fd641539986ebad9e2c9e71>div:nth-child(1)").width("100%").height("100%");
-            new ResizeSensor(jQuery('#da81eba76fd641539986ebad9e2c9e71'), function() { chart_da81eba76fd641539986ebad9e2c9e71.resize()});
-            var charts_id = ['fdfe64ad00e34437aac6de3fc8b36436','ad0e448eae0e45ea932a68589174e95c','1b755081541a44bf94c06b387378e6fc','4aa386a832634b6998416cfbad24a911','da81eba76fd641539986ebad9e2c9e71'];
+            $('#age_bar').css('border-style', 'dashed').css('border-width', '0px');$("#age_bar>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#age_bar'), function() { chart_age_bar.resize()});
+            $('#brand_bar').css('border-style', 'dashed').css('border-width', '0px');$("#brand_bar>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#brand_bar'), function() { chart_brand_bar.resize()});
+            $('#date_bar').css('border-style', 'dashed').css('border-width', '0px');$("#date_bar>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#date_bar'), function() { chart_date_bar.resize()});
+            $('#local_geo').css('border-style', 'dashed').css('border-width', '0px');$("#local_geo>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#local_geo'), function() { chart_local_geo.resize()});
+            $('#time_line').css('border-style', 'dashed').css('border-width', '0px');$("#time_line>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#time_line'), function() { chart_time_line.resize()});
+            var charts_id = ['age_bar','brand_bar','date_bar','local_geo','time_line'];
 function downloadCfg () {
     const fileName = 'chart_config.json'
     let downLink = document.createElement('a')
